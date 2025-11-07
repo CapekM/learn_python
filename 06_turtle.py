@@ -2,6 +2,11 @@ from turtle import forward, left, exitonclick, speed
 
 
 def draw_square(a: int=50):
+    """
+    Vykreslim ctverec
+    :param a: delka strany cverce
+    :return: nic nevracim
+    """
     forward(a)
     left(90)
     forward(a)
