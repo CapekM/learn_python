@@ -14,3 +14,11 @@ print(f"{id(b) = }")
 print(b)
 a.append(4)
 print(b)
+
+# typovani listu a tupelu
+list_int: list[int] = [1, 2, 3]
+tuple_int: tuple[int, int, int] = (1, 2, 3)
+tuple_int_2: tuple[int, ...] = (1, 2, 3)  # nevim velikost podle typu
+list_int_str: list[int | str] = [1, "a", 3, "b"]
+tuple_int_str: tuple[int, str, int, str] = (1, "a", 3, "b")
+tuple_int_str2: tuple[int | str, ...] = (1, "a", 3, "b")  # nevim velikost podle typu
